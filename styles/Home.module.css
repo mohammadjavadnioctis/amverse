@@ -1,5 +1,7 @@
 .container {
-  padding: 0 2rem;
+ 
+  height: 100vh;
+  overflow: hidden;
 }
 
 .main {
@@ -10,6 +12,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
+
 }
 
 .footer {
