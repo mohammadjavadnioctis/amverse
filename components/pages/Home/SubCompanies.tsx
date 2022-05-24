@@ -37,9 +37,9 @@ const SubCompanies: FC = () => {
             <div className="companies grid grid-cols-3 grid-rows-2 gap-8 justify-items-center  items-center
                              text-Mangold w-full h-full">
                 {Images && Images.length > 0 && Images.map((image) => (
-                     <div className="flex flex-col justify-center cursor-pointer">
+                     <div className="flex flex-col justify-center cursor-pointer" key={id + image.name}>
                          <span className="mb-4">{image.name}</span>
-                         <Image src={image.src} width={50} height={50} key={id + image.name} />
+                         <Image src={image.src} width={50} height={50}  />
                      </div>
                      
                      ) )
