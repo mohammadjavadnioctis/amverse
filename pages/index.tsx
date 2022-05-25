@@ -7,14 +7,6 @@ import MREftekhari from '../public/images/MrEftekhariOptimized.jpg'
 console.log('here is mr efte:', MREftekhari)
 const Home: NextPage = () => {
   
-//   const styling = {
-//     backgroundImage: `url('${MREftekhari.src}')`,
-//     // width:"100%",
-//     // height:"100%",
-//     'background-size': 'cover',
-//     'background-repeat': 'no-repeat',
-//     'background-position': 'center'
-// }
   return (
     <div className={styles.container}>
       <Head>
@@ -25,9 +17,16 @@ const Home: NextPage = () => {
 
       <main className={`${styles.main} s
       !bg-dark-Default relative`}
-      //  style={styling}
+    
        >
-        {/* <div className='overlay w-full h-full absolute border-4 border-blue-400 bg-[#292929] opacity-80'></div> */}
+        <div className='video absolute w-full h-full t-0 left-0'>
+           <video controls width="100%" height='100%' className=' relative top-[-67px]'>
+                <source src="/videos/cyrpusDrone.mp4"
+                          type="video/mp4"/>
+
+              Sorry, your browser doesn't support embedded videos.
+          </video>
+        </div>
         <HomePage />
 
 

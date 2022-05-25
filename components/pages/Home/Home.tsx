@@ -13,7 +13,7 @@ const HomePage: NextPage = () => {
             
         </div>       
    
-        <div className='sub-companies-container flex items-stretch '>
+        <div className='sub-companies-container '>
         
         <SubCompanies />
 

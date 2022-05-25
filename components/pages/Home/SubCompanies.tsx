@@ -4,27 +4,27 @@ import Image from 'next/image'
 const Images = [
     {
         name: 'Real-Estate',
-        src: '/images/svg/RealEstate.svg'
-    },
-    {
-        name: 'Tourism Services',
-        src: '/images/svg/touristServices.svg'
-    },
-    {
-        name: 'Restaurant',
-        src: '/images/svg/restaurant.svg'
+        src: '/images/Real.jpg'
     },
     {
         name: 'Music',
-        src: '/images/svg/microphone.svg'
+        src: '/images/music.jpeg'
+    },
+    {
+        name: 'Tourism Services',
+        src: '/images/tourism.jpg'
+    },
+    {
+        name: 'Restaurant',
+        src: '/images/restaurant.jpg'
     },
     {
         name: 'Academic',
-        src: '/images/svg/academic.svg'
+        src: '/images/academy.jpg'
     },
     {
         name: 'Corporation',
-        src: '/images/svg/corp-reg.svg'
+        src: '/images/Corporation.jpg'
     }
 ]
 
@@ -34,12 +34,27 @@ const SubCompanies: FC = () => {
     return (
         <div className="SubCompanies-container w-full h-full">
             
-            <div className="companies grid grid-cols-3 grid-rows-2 gap-8 justify-items-center  items-center
-                             text-Mangold w-full h-full">
+            <div className="companies grid grid-cols-3  gap-8 justify-items-center  items-center
+                             text-white w-full h-full">
                 {Images && Images.length > 0 && Images.map((image) => (
-                     <div className="flex flex-col justify-center cursor-pointer" key={id + image.name}>
-                         <span className="mb-4">{image.name}</span>
-                         <Image src={image.src} width={50} height={50}  />
+                     <div className="relative flex flex-col justify-between cursor-pointer  bg-dark-50 rounded-md  w-full h-full overflow-hidden" key={id + image.name}>
+                         <div className="aspect-w-3 aspect-h-2">
+                            <div className="overflow-hidden rounded-md ">
+                                <div className="w-full h-full relative">
+                                    
+                                    <Image 
+                                        src={image.src}
+                                        layout='fill'
+                                        objectFit="cover"
+                                        objectPosition='center'
+                                    />
+                                    
+                                 </div>
+                             </div>
+                         
+                         </div>
+                         <span className="mb-2 ml-2">{image.name}</span>
+
                      </div>
                      
                      ) )

@@ -5,8 +5,8 @@ const Layout : FC<PropsWithChildren<{}>> = ({children}) => {
     
     return(
         <>
-         <div className="w-full flex justify-center items-center">
-             <div className="container flex justify-end mr-32">
+         <div className="w-full absolute t-0 l-0 z-30 flex justify-center items-center">
+             <div className="container flex justify-end">
 
                 <Image src={'/AmverseLogoCropped.png'} width={150} height={100} />
              

@@ -20,11 +20,13 @@ module.exports = {
           '900': '#423305'
         },
         'dark': {
-          Default: '#292929',
-          '50': '#1d1d1d'
+          DEFAULT: '#000000',
+          '50': '#161716'
         }
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
 }
