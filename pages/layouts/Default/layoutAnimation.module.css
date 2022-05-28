@@ -21,7 +21,7 @@
 
 
 .animation_background{
-    position: absolute;
+    position: absolute !important;
     bottom: 100%;
     left: 100% ;
     width: 130%;
@@ -84,8 +84,3 @@
 
 
 
-
-
-.welccome_container{
-
-}

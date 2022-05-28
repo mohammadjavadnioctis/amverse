@@ -7,8 +7,8 @@ const Layout : FC<PropsWithChildren<{}>> = ({children}) => {
     
     return(
         <>
-                    <div className={`${styles.animation_background} aspect-w-1 aspect-h-1 `} ></div>
-
+                   
+         <div className={`${styles.animation_background} aspect-w-1 aspect-h-1 `} ></div>
          <div className={`${styles.header_wrapper}  w-full absolute t-0 l-0 z-30 flex justify-center items-center`}>
              <div className="container relative">
 
