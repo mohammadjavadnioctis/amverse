@@ -17,6 +17,9 @@ a {
   box-sizing: border-box;
 }
 
+:root{
+  --bg-dark-50: #161716 ; 
+}
 
 @tailwind base;
 @tailwind components;

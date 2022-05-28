@@ -1,15 +1,39 @@
 import Image from "next/image"
 import { FC, PropsWithChildren, ReactNode } from "react"
+import styles from  './layoutAnimation.module.css'
+
 
 const Layout : FC<PropsWithChildren<{}>> = ({children}) => {
     
     return(
         <>
-         <div className="w-full absolute t-0 l-0 z-30 flex justify-center items-center">
-             <div className="container flex justify-end">
+                    <div className={`${styles.animation_background} aspect-w-1 aspect-h-1 `} ></div>
 
-                <Image src={'/AmverseLogoCropped.png'} width={150} height={100} />
+         <div className={`${styles.header_wrapper}  w-full absolute t-0 l-0 z-30 flex justify-center items-center`}>
+             <div className="container relative">
+
+                <div className="inline-block">
+                        
+                        <Image 
+                            className={styles.hiddenLogo} 
+                            src={'/AmverseLogoCropped.png'} 
+                            width={150} 
+                            height={100}
+                            alt={'amverse-logo'}
+                            /> 
+
+                </div>
+             <div className={`${styles.logo_container} `}>
+
+                        <Image 
+                            className={styles.logo} 
+                            src={'/AmverseLogoCropped.png'}
+                            width={150} 
+                            height={100}
+                            alt={'amverse-logo'}
+                            />
              
+             </div>
              </div>
          </div>
             {children}

@@ -34,7 +34,7 @@ const SubCompanies: FC = () => {
     return (
         <div className="SubCompanies-container w-full h-full">
             
-            <div className="companies grid grid-cols-3  gap-8 justify-items-center  items-center
+            <div className="companies grid grid-cols-3 grid-rows-[repeat(2,_min-content)] gap-8 justify-items-center xl:items-center
                              text-white w-full h-full">
                 {Images && Images.length > 0 && Images.map((image) => (
                      <div className="relative flex flex-col justify-between cursor-pointer  bg-dark-50 rounded-md  w-full h-full overflow-hidden" key={id + image.name}>
@@ -47,13 +47,14 @@ const SubCompanies: FC = () => {
                                         layout='fill'
                                         objectFit="cover"
                                         objectPosition='center'
+                                        alt={image.name}
                                     />
                                     
                                  </div>
                              </div>
                          
                          </div>
-                         <span className="mb-2 ml-2">{image.name}</span>
+                         <span className="my-2 ml-2">{image.name}</span>
 
                      </div>
                      

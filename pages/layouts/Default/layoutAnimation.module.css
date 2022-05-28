@@ -1,0 +1,91 @@
+.header_wrapper{
+    animation: pageReveal cubic-bezier(1,-0.12, 0.58, 1) 1500ms;
+    transition: all 5000ms;
+}
+
+.header_inner {
+}
+
+
+
+.logo_container{
+    position: absolute;
+    top: 1rem;
+    right: 25px;
+    animation: logoTranslate cubic-bezier(1,-0.12, 0.58, 1) 1500ms;
+    transition: all 5000ms;
+
+
+
+}
+
+
+.animation_background{
+    position: absolute;
+    bottom: 100%;
+    left: 100% ;
+    width: 130%;
+    border-radius: 50%;
+    background-color: var(--bg-dark-50);
+    z-index: 10;
+    animation: animation_background cubic-bezier(1,-0.12, 0.58, 1) 1500ms;
+
+}
+
+.hiddenLogo{
+    visibility: hidden;
+}
+
+
+
+@keyframes pageReveal {
+    0%{
+        height: 100%;
+       
+    }
+    100%{ 
+       
+        height: 13%;
+
+    }
+}
+
+@keyframes logoTranslate {
+    0%{
+        
+       right: 50%;
+    }
+
+
+    100%{ 
+       
+        right: 25px;
+
+    }
+}
+@keyframes animation_background {
+    0%{
+        bottom: -50%;
+        left: -15%;
+       
+
+    }
+
+
+    100%{ 
+       
+       
+        bottom: 87%;
+        left: 93%;
+       
+
+    }
+}
+
+
+
+
+
+.welccome_container{
+
+}
