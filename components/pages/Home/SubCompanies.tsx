@@ -34,27 +34,25 @@ const SubCompanies: FC = () => {
     return (
         <div className="SubCompanies-container w-full h-full">
             
-            <div className="companies grid grid-cols-3 grid-rows-[repeat(2,_min-content)] gap-8 justify-items-center xl:items-center
-                             text-white w-full h-full">
+            <div className="companies grid grid-cols-[repeat(3,_minmax(0,_200px))] grid-rows-[repeat(2,minmax(0,200px))] gap-8 justify-center items-center
+                             text-white w-[100%] h-[100%] border-2 border-orange-400">
                 {Images && Images.length > 0 && Images.map((image) => (
                      <div className="relative flex flex-col justify-between cursor-pointer  bg-dark-50 rounded-md  w-full h-full overflow-hidden" key={id + image.name}>
-                         <div className="aspect-w-3 aspect-h-2">
-                            <div className="overflow-hidden rounded-md ">
-                                <div className="w-full h-full relative">
+                                <div className="w-full h-full relative overflow-hidden rounded-md flex justify-center ">
                                     
                                     <Image 
                                         src={image.src}
-                                        layout='fill'
-                                        objectFit="cover"
-                                        objectPosition='center'
+                                        // layout='fill'
+                                        // objectFit="cover"
+                                        // objectPosition='center'
+                                        width={200}
+                                        height={150}
                                         alt={image.name}
                                     />
                                     
                                  </div>
-                             </div>
                          
-                         </div>
-                         <span className="my-2 ml-2">{image.name}</span>
+                         <span className="my-2 ml-2 text-sm">{image.name}</span>
 
                      </div>
                      

@@ -8,7 +8,7 @@ const Layout : FC<PropsWithChildren<{}>> = ({children}) => {
     return(
         <>
                    
-         <div className={`${styles.animation_background} aspect-w-1 aspect-h-1 `} ></div>
+         <div className={`${styles.animation_background} aspect-w-1 aspect-h-1`} ></div>
          <div className={`${styles.header_wrapper}  w-full absolute t-0 l-0 z-30 flex justify-center items-center`}>
              <div className="container relative">
 
@@ -17,7 +17,7 @@ const Layout : FC<PropsWithChildren<{}>> = ({children}) => {
                         <Image 
                             className={styles.hiddenLogo} 
                             src={'/AmverseLogoCropped.png'} 
-                            width={150} 
+                            width={100} 
                             height={100}
                             alt={'amverse-logo'}
                             /> 
@@ -28,7 +28,7 @@ const Layout : FC<PropsWithChildren<{}>> = ({children}) => {
                         <Image 
                             className={styles.logo} 
                             src={'/AmverseLogoCropped.png'}
-                            width={150} 
+                            width={100} 
                             height={100}
                             alt={'amverse-logo'}
                             />

@@ -12,7 +12,7 @@ export default class _Document extends Document {
     return (
       <Html>
         <Head />
-        <body className={``}>
+        <body className={`overflow-hidden`}>
           <Main />
           <NextScript />
         </body>
