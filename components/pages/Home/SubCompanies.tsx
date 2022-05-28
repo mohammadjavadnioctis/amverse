@@ -4,7 +4,7 @@ import Image from 'next/image'
 const Images = [
     {
         name: 'Real-Estate',
-        src: '/images/Real.jpg'
+        src: '/images/real.jpg'
     },
     {
         name: 'Music',
