@@ -12,7 +12,7 @@ export default class _Document extends Document {
     return (
       <Html>
         <Head />
-        <body className={`overflow-hidden`}>
+        <body className={`xl:overflow-hidden`}>
           <Main />
           <NextScript />
         </body>

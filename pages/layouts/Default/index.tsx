@@ -23,7 +23,7 @@ const Layout : FC<PropsWithChildren<{}>> = ({children}) => {
                             /> 
 
                 </div>
-             <div className={`${styles.logo_container} `}>
+             <div className={`${styles.logo_container} -translate-x-1/2 xl:translate-x-0`}>
 
                         <Image 
                             className={styles.logo} 
